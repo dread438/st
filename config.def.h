@@ -205,8 +205,13 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
     { ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	/* 	*/
 	{ MODKEY,               XK_l,           copyurl,        {.i =  0} },
 	{ MODKEY|ShiftMask,     XK_L,           copyurl,        {.i =  1} },
+	{ MODKEY,               XK_o,           opencopied,     {.v = "xdg-open"} },
+	{ ControlMask,          XK_equal,       zoom,           {.f = +1} },
+	{ ControlMask,          XK_minus,       zoom,           {.f = -1} },
+	{ ControlMask,          XK_0,           zoomreset,      {.f =  0} },
 };
 
 /*

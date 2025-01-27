@@ -78,6 +78,7 @@ typedef union {
 } Arg;
 
 void die(const char *, ...);
+void opencopied(const Arg *);
 void redraw(void);
 void draw(void);
 
