@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono:pixelsize=16:antialias=true:autohint=true";
-static int borderpx = 3;
+static char *font = "JetBrainsMonoNL Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -131,6 +131,12 @@ unsigned int defaultfg = 259;
 unsigned int defaultbg = 258;
 unsigned int defaultcs = 257;
 static unsigned int defaultrcs = 257;
+
+
+/*
+* Minimum contrast ratio (1-21)
+*/
+const float min_contrast_ratio = 3.0f;
 
 /*
  * Default shape of cursor
