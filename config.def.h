@@ -214,6 +214,9 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_K,           copyurl,        {.i =  0} },
 	{ TERMMOD,     			XK_J,           copyurl,        {.i =  1} },
 	{ TERMMOD,              XK_O,           opencopied,     {.v = "xdg-open"} },
+	{ ControlMask,          XK_equal,       zoom,           {.f = +1} },
+	{ ControlMask,          XK_minus,       zoom,           {.f = -1} },
+	{ ControlMask,          XK_0,           zoomreset,      {.f =  0} },
 };
 
 /*
