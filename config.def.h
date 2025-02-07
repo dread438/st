@@ -213,6 +213,7 @@ static Shortcut shortcuts[] = {
     { ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 	{ TERMMOD,              XK_K,           copyurl,        {.i =  0} },
 	{ TERMMOD,     			XK_J,           copyurl,        {.i =  1} },
+	{ TERMMOD,              XK_O,           opencopied,     {.v = "xdg-open"} },
 };
 
 /*
